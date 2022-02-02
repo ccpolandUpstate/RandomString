@@ -30,9 +30,10 @@ public class RandomString {
         String sPartTwo = (stringOne.substring(random, stringOne.length()));
         System.out.println(sPartOne + sPartTwo);
 
-
         /* B VERSION CODE
         PART OF B VERSION*/
+        random = (int)(Math.random() * stringOne.length()) +1;
+        
 
 
 

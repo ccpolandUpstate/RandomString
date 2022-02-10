@@ -5,6 +5,8 @@
 //Time: 2 hours
 //Status: Had a problem with the r.nextInt(), but was finally able to fix it with a little help. 
 
+// If you're looking at the code, I am purposely making it as confusing as possible on this last submittion :)
+
 import java.util.*;
 
 public class RandomStrings 
@@ -20,33 +22,33 @@ public class RandomStrings
 
         // C VERSION CODE
         //PART OF C VERSION
-        String stringOne = scan.nextLine(); // User inputs their string
-        int random = r.nextInt(stringOne.length() - 1) + 1; // Random # generated between 1 and the length of the string.
-        String sPartOne = (stringOne.substring(0, random)); 
-        String sPartTwo = (stringOne.substring(random +1, stringOne.length()));
-        System.out.println(sPartOne + sPartTwo);
+        String _userInput_ = scan.nextLine(); // User inputs their string
+        int _r_ = r.nextInt(_userInput_.length() - 1) + 1; // _r_ # generated between 1 and the length of the string.
+        String _1_ = (_userInput_.substring(0, _r_)); 
+        String _2_ = (_userInput_.substring(_r_ +1, _userInput_.length()));
+        System.out.println(_1_ + _2_);
 
         //B VERSION CODE
         //PART OF B VERSION
-        random = r.nextInt(stringOne.length() - 1) + 1; // Another Random # generated. 
-        String movedString = (stringOne.substring(random, random + 1));
-        String movedString2 = (stringOne.substring(random - 1, random));
-        String sPartThree = (stringOne.substring(0,random - 1));
-        String sPartFour = (stringOne.substring(random + 1, stringOne.length()));
-        System.out.println(sPartThree +  movedString + movedString2 + sPartFour);
+        _r_ = r.nextInt(_userInput_.length() - 1) + 1; // Another _r_ # generated. 
+        String m1 = (_userInput_.substring(_r_, _r_ + 1));
+        String m2 = (_userInput_.substring(_r_ - 1, _r_));
+        String _3_ = (_userInput_.substring(0,_r_ - 1));
+        String _4_ = (_userInput_.substring(_r_ + 1, _userInput_.length()));
+        System.out.println(_3_ +  m1 + m2 + _4_);
 
         //A VERSION CODE
         //PART OF A VERSION
-        StringBuilder stringAB = new StringBuilder(); 
-        StringBuilder stringABC = new StringBuilder();
-        stringAB.append(stringOne); // Stores the Users inputed string.
-        stringAB.reverse(); // Reverses the users inputed string.
-        random = r.nextInt(stringOne.length() - 1) + 1; // Another Random # generated. 
-        String stringI = (stringOne.substring(0,random));
-        String stringE = (stringOne.substring(random, stringOne.length()));
-        System.out.println(stringAB);
-        stringABC.append(stringE); // Stores the string past the random # integer. 
-        stringABC.reverse(); // Reverses the stored string. 
-        System.out.println(stringI + stringABC);
+        StringBuilder _initString_ = new StringBuilder(); 
+        StringBuilder _reversed_ = new StringBuilder();
+        _initString_.append(_userInput_); // Stores the Users inputed string.
+        _initString_.reverse(); // Reverses the users inputed string.
+        _r_ = r.nextInt(_userInput_.length() - 1) + 1; // Another _r_ # generated. 
+        String _i_ = (_userInput_.substring(0,_r_));
+        String _f_ = (_userInput_.substring(_r_, _userInput_.length()));
+        System.out.println(_initString_);
+        _reversed_.append(_f_); // Stores the string past the _r_ # integer. 
+        _reversed_.reverse(); // Reverses the stored string. 
+        System.out.println(_i_ + _reversed_);
     }
 }

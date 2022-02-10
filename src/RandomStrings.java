@@ -30,10 +30,10 @@ public class RandomStrings
         //PART OF B VERSION
         random = r.nextInt(stringOne.length() - 1) + 1; // Another Random # generated. 
         String movedString = (stringOne.substring(random, random + 1));
-        String movedString2 = (stringOne.substring(random + 1, random + 2));
-        String sPartThree = (stringOne.substring(0,random));
-        String sPartFour = (stringOne.substring(random + 2, stringOne.length()));
-        System.out.println(sPartThree + movedString2 + movedString + sPartFour);
+        String movedString2 = (stringOne.substring(random - 1, random));
+        String sPartThree = (stringOne.substring(0,random - 1));
+        String sPartFour = (stringOne.substring(random + 1, stringOne.length()));
+        System.out.println(sPartThree +  movedString + movedString2 + sPartFour);
 
         //A VERSION CODE
         //PART OF A VERSION

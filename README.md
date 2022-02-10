@@ -1,18 +1,19 @@
-## Getting Started
+## How to Use
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+You'll be asked to input a string and you'll be presented 4 lines:
 
-## Folder Structure
+## Line 1: 
+      Subtracts a random letter based on the random integer generated.
+## Line 2:
+      Switches the number on the right of your random integer letter and moved it to the left of it.
+      
+## Line 3:
+      Takes the string you inputted and reverses it.
+      
+## Line 4:
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+      Takes the string inputted and then prints out the orgiinal string up to your random integer generated, then reverses the string. 
+      
+      
+This project contained a lot of String methods including : [substrings, StringBuilder, string.length(), append, reverse, and scanner objects for .nextInt]  
+      
